@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+      <div class="left">
+        <h1> <i class="fa fa-user-circle-o" aria-hidden="true"></i>  Student Registration</h1>
+        <form action="" id="record-form">
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="number" id="age" placeholder="Age" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <button type="submit">Add Record</button>
+          <button id="clearAll">Clear All Record</button>
+          <input type="hidden" id="edit-index" value="-1">
+        </form>
+      </div>
+         
+         <div class="right">
+          <h1>Record</h1>
+          <h4 id="total-student"> </h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+           <tbody id="record-list"></tbody>
+          </table>
+         </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
